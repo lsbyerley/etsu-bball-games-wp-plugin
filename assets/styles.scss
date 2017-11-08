@@ -1,0 +1,120 @@
+$etsublue: #041E42;
+$etsugold: #FFC72C;
+
+
+.hover-effect {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	&:hover {
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		transform: translateY(-5px);
+	}
+}
+
+.etsu-bball-games{
+    
+    font-size: 16px;
+    
+    .game-type{
+        background: #636467;
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .game {
+        
+    	background: $etsublue;
+    	width: 100%;
+    	padding: 2px;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: stretch;
+    	margin-bottom: 1.3125em;
+    	
+    	&:last-child{
+    	    margin-bottom:0;
+    	}
+    	
+    	&.post .game-row.status{
+    	    text-transform:uppercase;
+    	}
+    	
+    	.game-row {
+    	    
+    		background: transparent;
+    		color: $etsugold;
+    		margin-bottom: 2px;
+    		width: 100%;
+    		
+    		&:last-child {
+    			margin-bottom: 0;
+    		}
+    		
+    		&.status {
+    			padding: 3px 0;
+    			text-align: center;
+    			color: $etsugold;
+    		}
+    		
+    		&.team {
+    		    
+    			display: flex;
+    			padding: 3px 0;
+    			background: #FFF;
+    			color: #444;
+    			
+    			.logo{
+    			    display: flex;
+    				justify-content: center;
+    				align-items: center;
+                    height: 40px;
+                    width: 40px;
+                    padding-left:5px;
+    			}
+    			
+    			.meta {
+    				flex-grow: 1;
+    				padding-left:10px;
+    				.name {
+    					margin: 0;
+    				}
+    				.record {
+    					font-size: 12px;
+    				}
+    			}
+    			
+    			.score {
+    				width: 60px;
+    				text-align: center;
+    				color: #444;
+    				text-shadow: 0 0 2px rgba(255, 255, 255, 0.75), 0 0 4px rgba(255, 255, 255, 0.45);
+    				display: flex;
+    				justify-content: center;
+    				align-items: center;
+    				font-size:22px;
+    				font-weight:bold;
+    				&.loser{
+    				    color: #999;
+    				}
+    			}
+    		}
+    		
+    		&.venue {
+    		    color: #FFF;
+    			text-align: center;
+    			padding: 2px 0;
+    			font-size:12px;
+    		}
+    		
+    		&.note{
+    		    color: #FFF;
+    			text-align: center;
+    			padding: 2px 0;
+    			font-size:12px;
+    		}
+    		
+    	}
+    }
+
+}
